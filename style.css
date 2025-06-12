@@ -6,27 +6,42 @@ body {
     background-color: #F5F5DC;
 }
 
+/* Estilos para o Cabeçalho */
 header {
-    background-color: #008080;
-    color: #F5F5DC;
-    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C3E50;  /* Cor de fundo */
+    padding: 20px;
+    color: white;
+    border-bottom: 3px solid #34495E; /* Linha de separação */
 }
 
-header nav ul {
-    list-style-type: none;
-    text-align: center;
+header .logo h1 {
+    font-size: 32px;
+    font-family: 'Arial', sans-serif;
+    margin-right: 20px;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 20px;
+header .social-media {
+    display: flex;
+    align-items: center;
 }
 
-header nav ul li a {
-    color: #F5F5DC;
+.instagram-link {
     text-decoration: none;
-    font-size: 18px;
 }
+
+.instagram-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.instagram-icon:hover {
+    transform: scale(1.1);  /* Efeito de aumentar o ícone */
+}
+
 
 section {
     padding: 20px;
@@ -44,4 +59,23 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .social-media {
+        margin-top: 10px;
+    }
 }
