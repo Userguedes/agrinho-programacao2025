@@ -15,9 +15,10 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #3e8e41; /* Verde campo */
+    background-color: #4CAF50; /* Cor mais chamativa, verde */
     color: white;
     padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
 
 header .container {
@@ -43,9 +44,11 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
+    color: #f4f4f4; /* Cor clara para o hover */
     text-decoration: underline;
 }
 
@@ -60,7 +63,7 @@ header nav ul li a:hover {
 
 .content h2 {
     font-size: 24px;
-    color: #3e8e41; /* Verde para os títulos */
+    color: #4CAF50; /* Verde para os títulos */
     margin-bottom: 20px;
 }
 
@@ -72,10 +75,11 @@ header nav ul li a:hover {
 
 /* Rodapé */
 footer {
-    background-color: #3e8e41; /* Verde campo */
+    background-color: #ff5722; /* Cor vibrante laranja */
     color: white;
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra para o rodapé */
 }
 
 footer p {
