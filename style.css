@@ -11,10 +11,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ea00ff;  /* Cor de fundo */
+    background-color: #16941d;  /* Cor de fundo */
     padding: 20px;
     color: white;
-    border-bottom: 3px solid #ea00ff; /* Linha de separação */
+    border-bottom: 3px solid #16941d; /* Linha de separação */
 }
 
 header .logo h1 {
@@ -53,7 +53,7 @@ section {
 
 footer {
     text-align: center;
-    background-color: #ea00ff;
+    background-color: #16941d;
     color: #F5F5DC;
     padding: 10px 0;
     position: fixed;
