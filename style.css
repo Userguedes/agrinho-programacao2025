@@ -1,24 +1,22 @@
-/* Reset de estilos básicos */
+/* Resetando estilos padrões */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos Gerais */
+/* Estilo Geral */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #4CAF50; /* Cor mais chamativa, verde */
+    background-color: #2c3e50; /* Cor escura para o cabeçalho */
     color: white;
     padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
 
 header .container {
@@ -48,42 +46,76 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #f4f4f4; /* Cor clara para o hover */
-    text-decoration: underline;
+    color: #f39c12; /* Cor de destaque no hover */
 }
 
 /* Seções do conteúdo */
 .content {
-    background-color: white;
-    padding: 40px;
+    padding: 40px 0;
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .content h2 {
-    font-size: 24px;
-    color: #4CAF50; /* Verde para os títulos */
+    font-size: 26px;
+    color: #2c3e50;
     margin-bottom: 20px;
 }
 
 .content p {
     font-size: 16px;
     color: #555;
-    margin-bottom: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.content img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a Seção Campo */
+.campo {
+    background-color: #d4f1c6;
+}
+
+/* Estilo para a Seção Cidade */
+.cidade {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para a Seção Conclusão */
+.conclusao {
+    background-color: #f39c12;
+    color: white;
 }
 
 /* Rodapé */
 footer {
-    background-color: #ff5722; /* Cor vibrante laranja */
+    background-color: #34495e; /* Cor escura para o rodapé */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra para o rodapé */
 }
 
 footer p {
     font-size: 14px;
+}
+
+footer .social {
+    margin-top: 10px;
+}
+
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #f39c12; /* Cor de destaque nos links sociais */
 }
 
 /* Responsividade */
