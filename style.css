@@ -1,81 +1,77 @@
-/* style.css */
+/* Estilos Gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5DC;
+    background-color: #f4f4f4;
 }
 
-/* Estilos para o Cabeçalho */
+/* Cabeçalho */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #16941d;  /* Cor de fundo */
-    padding: 20px;
+    background-color: #1c8618;
     color: white;
-    border-bottom: 3px solid #16941d; /* Linha de separação */
-}
-
-header .logo h1 {
-    font-size: 32px;
-    font-family: 'Arial', sans-serif;
-    margin-right: 20px;
-}
-
-header .social-media {
+    padding: 15px 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.instagram-link {
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Links no Cabeçalho */
+header .social-links a {
+    color: white;
+    margin-left: 15px;
     text-decoration: none;
+    font-size: 18px;
 }
 
-.instagram-icon {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s;
+header .social-links a:hover {
+    text-decoration: underline;
 }
 
-.instagram-icon:hover {
-    transform: scale(1.1);  /* Efeito de aumentar o ícone */
+/* Estilo do Link "Sobre" */
+.sobre-link {
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 20px;
 }
 
-
-section {
+/* Estilos da Aba de Apresentação */
+.sobre {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
     padding: 20px;
     margin: 20px;
-    background-color: #F5F5DC;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    text-align: center;
-    background-color: #16941d;
-    color: #F5F5DC;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.sobre h2 {
+    margin-top: 0;
+    font-size: 24px;
 }
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    header nav ul {
-        flex-direction: column;
-        margin-top: 10px;
-    }
+.sobre p {
+    font-size: 16px;
+    line-height: 1.5;
+}
 
-    header nav ul li {
-        margin: 10px 0;
-    }
+.close-btn {
+    display: inline-block;
+    background-color: #1c8618;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
 
-    .social-media {
-        margin-top: 10px;
-    }
+.close-btn:hover {
+    background-color: #1c8618;
 }

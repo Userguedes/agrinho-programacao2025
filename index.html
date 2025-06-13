@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brotando o novo</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header>
-    <div class="logo">
-        <h1>Brotando o novo</h1> <!-- Nome do site -->
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Brotando o novo</h1>
+        <div class="social-links">
+            <a href="https://www.instagram.com/gko_elisa" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/elisa.batista.31586" target="_blank">Facebook</a>
+            <a href="tel:+5544999492298">Telefone</a>
+        </div>
+    </header>
+
+    <!-- Link para "Sobre" -->
+    <div class="sobre-link">
+        <a href="#" id="sobre-link">Sobre</a>
     </div>
-    
-    <!-- Ícone do Instagram -->
-    <div class="social-media">
-        <a href="https://www.instagram.com/gko_elisa" target="_blank" class="instagram-link">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" class="instagram-icon" />
-        </a>
+
+    <!-- Aba de Apresentação (inicialmente oculta) -->
+    <div class="sobre" id="sobre">
+        <h2>Sobre o site</h2>
+        <p>Olá! Esse site foi criado por Elisa Guedes, para o concurso Agrinho do estado do Paraná. Tem como objetivo mostrar a importância da ligação entre as raízes do campo, que se liga com a cidade. Por Elisa, do 2º ano do ensino médio.</p>
+        <a href="#" class="close-btn" id="close-btn">Fechar</a>
     </div>
-</header>
 
+    <script>
+        // Script para abrir e fechar a aba "Sobre"
+        const sobreLink = document.getElementById("sobre-link");
+        const sobre = document.getElementById("sobre");
+        const closeBtn = document.getElementById("close-btn");
 
-    <section id="home">
-        <h1>O que é a celebração do campo-cidade?</h1>
-        <p>A relação entre o campo e a cidade é essencial para entendermos a sociedade de hoje. Muitas vezes, vemos o campo e a cidade como opostos, mas eles estão conectados, trocando influências e recursos constantemente. Celebrar essa relação é uma forma de valorizar as diferentes formas de vida e saberes que moldam nossa identidade coletiva.</p>
-    </section>
+        // Abrir a aba "Sobre"
+        sobreLink.addEventListener("click", function(e) {
+            e.preventDefault();
+            sobre.style.display = "block";
+        });
 
-    <section id="sobre">
-        <h2>Valorização das Raízes Culturais</h2>
-        <p>O campo é a base de muitas culturas que influenciam as cidades. As tradições, festas e expressões culturais do meio rural são muitas vezes a origem das cidades. Celebrar o campo-cidade é reconhecer essas raízes, que aparecem na culinária, nas festas e no artesanato. Exemplo: As feiras de produtos orgânicos e a comida típica das cidades são heranças do campo. Valorizá-las fortalece nossa identidade cultural e conecta as gerações.</p>
-    </section>
-<img src="image.png" alt="">
-    <section id="contato">
-        <h2>Conclusão</h2>
-        <p>Celebrar a conexão entre o campo e a cidade é valorizar a diversidade e construir um futuro mais equilibrado e sustentável para todos.</p>
-    </section>
+        // Fechar a aba "Sobre"
+        closeBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+            sobre.style.display = "none";
+        });
+    </script>
 
-    <footer>
-        <p>&copy; 2025 Brotando o novo. Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
